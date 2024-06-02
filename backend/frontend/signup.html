@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - PassDiary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="./signup.js"></script>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">PassDiary</a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="mailto:your-email@example.com">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Sign Up for PassDiary</h1>
+        <form id="signupForm">
+            <!-- Text input for username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <span class="error" id="usernameError"></span>
+            <br><br>
+
+            <!-- Email input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+            <br><br>
+
+            <!-- Password input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error" id="passwordError"></span>
+            <br><br>
+
+            <!-- Confirm Password input -->
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <span class="error" id="confirmPasswordError"></span>
+            <br><br>
+
+            <!-- Submit button -->
+            <button class="btn" type="submit" id="signupBtn">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>
